@@ -100,16 +100,16 @@ export default function Container() {
             {loanData.map((loan) => (
               <div
                 key={loan.id}
-                className="mb-4 p-4 border rounded-lg  bg-gray-200 shadow-sm"
+                className="mb-4 p-4 border rounded-lg flex items-center  bg-gray-200 shadow-sm"
               >
                 <div>
-                  {/* {loan.img && (
+                  {loan.img && (
                     <img
                       src={loan.img}
                       alt={loan.img || "Зээлийн зураг"}
-                      className="w-16 h-16 mb-2 object-cover"
+                      className="w-10 h-10 mb-2 object-cover"
                     />
-                  )} */}
+                  )}
                 </div>
 
                 <div className="flex items-center gap-1 w-[572px] justify-between">

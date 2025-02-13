@@ -1,7 +1,7 @@
 export const loanData = [
   {
     id: 1,
-    //   img: "https://smartstore.mn/4e99cdeef851d5807f3122d1ba91be57.png",
+    img: "https://smartstore.mn/4e99cdeef851d5807f3122d1ba91be57.png",
     description: "Та зээлмйн нэхцлээр энэхүү барааг авах боломжтой.",
     details: "power by TBD",
   },

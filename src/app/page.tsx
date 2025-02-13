@@ -6,7 +6,7 @@ import Product from "./_Components/Product";
 
 export default function Home() {
   return (
-    <div className="bg-white flex h-[2800px] flex-col">
+    <div className="bg-white flex h-[2400px] flex-col">
       <Container />
       <Product />
     </div>
