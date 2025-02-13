@@ -10,21 +10,35 @@ export default function Container() {
             alt=""
             className="border border-black cursor-crosshair w-auto h-auto text-[0px] relative select-none bor"
           />
-          <div className="flex justify-center ">
-            <button className="h-[30px] w-[30px] flex-[0_0_30px] mt-[66px]  rounded-[4px] border border-solid border-[rgb(204,204,204)]">
+          <div className="flex w-[500px] h-[500px]">
+            <button className="h-[30px] w-[30px] mt-[30px]  rounded-[4px] border border-solid border-[rgb(204,204,204)]">
               <img
                 src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5MiA0OTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ5MiA0OTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMTk4LjYwOCwyNDYuMTA0TDM4Mi42NjQsNjIuMDRjNS4wNjgtNS4wNTYsNy44NTYtMTEuODE2LDcuODU2LTE5LjAyNGMwLTcuMjEyLTIuNzg4LTEzLjk2OC03Ljg1Ni0xOS4wMzJsLTE2LjEyOC0xNi4xMiAgICBDMzYxLjQ3NiwyLjc5MiwzNTQuNzEyLDAsMzQ3LjUwNCwwcy0xMy45NjQsMi43OTItMTkuMDI4LDcuODY0TDEwOS4zMjgsMjI3LjAwOGMtNS4wODQsNS4wOC03Ljg2OCwxMS44NjgtNy44NDgsMTkuMDg0ICAgIGMtMC4wMiw3LjI0OCwyLjc2LDE0LjAyOCw3Ljg0OCwxOS4xMTJsMjE4Ljk0NCwyMTguOTMyYzUuMDY0LDUuMDcyLDExLjgyLDcuODY0LDE5LjAzMiw3Ljg2NGM3LjIwOCwwLDEzLjk2NC0yLjc5MiwxOS4wMzItNy44NjQgICAgbDE2LjEyNC0xNi4xMmMxMC40OTItMTAuNDkyLDEwLjQ5Mi0yNy41NzIsMC0zOC4wNkwxOTguNjA4LDI0Ni4xMDR6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMwMDAwMDAiPjwvcGF0aD4KCTwvZz4KPC9nPjwvZz4gPC9zdmc+"
                 alt=""
                 className="w-[23px] h-[23px]"
               />
             </button>
-            <div className="flex mb-[50px]">
-              <img src="https://cdnp.cody.mn/spree/images/1603000/small/lite2_2.png" />
-              <img src="https://cdnp.cody.mn/spree/images/1603001/small/lite2_3.png" />
-              <img src="https://cdnp.cody.mn/spree/images/1603001/small/lite2_3.png" />
+            <div className="flex mb-[300px] ">
+              <div className="border-2 border-[#0698D2] w-[96px] h-[96px]">
+                <img
+                  src="https://cdnp.cody.mn/spree/images/1603000/small/lite2_2.png"
+                  className="w-[85px] h-[85px]"
+                />
+              </div>
+              <div className="border-2 border-[#0698D2] w-[96px] h-[96px]">
+                <img
+                  src="https://cdnp.cody.mn/spree/images/1603001/small/lite2_3.png"
+                  className="w-[85px] h-[85px]"
+                />
+              </div>
+              <div className="border-2 border-[#0698D2] w-[96px] h-[96px]">
+                <img
+                  src="https://cdnp.cody.mn/spree/images/1603001/small/lite2_3.png"
+                  className="w-[85px] h-[85px]"
+                />
+              </div>
             </div>
-
-            <button className="h-[30px] w-[30px] flex-[0_0_30px] mt-[60px]  rounded-[4px] border border-solid border-[rgb(204,204,204)]">
+            <button className="h-[30px] w-[30px] mb-[30px]  rounded-[4px] border border-solid border-[rgb(204,204,204)]">
               <img
                 src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDQ1MS44NDYgNDUxLjg0NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUxLjg0NiA0NTEuODQ3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGc+Cgk8cGF0aCBkPSJNMzQ1LjQ0MSwyNDguMjkyTDE1MS4xNTQsNDQyLjU3M2MtMTIuMzU5LDEyLjM2NS0zMi4zOTcsMTIuMzY1LTQ0Ljc1LDBjLTEyLjM1NC0xMi4zNTQtMTIuMzU0LTMyLjM5MSwwLTQ0Ljc0NCAgIEwyNzguMzE4LDIyNS45MkwxMDYuNDA5LDU0LjAxN2MtMTIuMzU0LTEyLjM1OS0xMi4zNTQtMzIuMzk0LDAtNDQuNzQ4YzEyLjM1NC0xMi4zNTksMzIuMzkxLTEyLjM1OSw0NC43NSwwbDE5NC4yODcsMTk0LjI4NCAgIGM2LjE3Nyw2LjE4LDkuMjYyLDE0LjI3MSw5LjI2MiwyMi4zNjZDMzU0LjcwOCwyMzQuMDE4LDM1MS42MTcsMjQyLjExNSwzNDUuNDQxLDI0OC4yOTJ6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMwMDAwMDAiPjwvcGF0aD4KPC9nPjwvZz4gPC9zdmc+"
                 className="w-[23px] h-[23px]"
@@ -64,10 +78,6 @@ export default function Container() {
           </div>
           <p>Ухаалаг цаг</p>
           <div className="shrink-0 bg-border h-[1px] w-full border-border border"></div>
-          <div className="text-[rgb(17,17,17)] w-[612px] h-[100px] rounded-md relative flex flex-col justify-center items-center bg-[rgba(254,212,83,0.47)]">
-            <h5>Онцгой санал дуусахад</h5>
-            <p>16 Өдөр 09 Цаг 03 мин 28 сэк </p>
-          </div>
           <div className="flex w-[612px] justify-between">
             <div>
               <p>Онлайн авах үнэ</p>
