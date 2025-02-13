@@ -1,10 +1,9 @@
-import Image from "next/image";
 import { loanData } from "./Mydata";
 
 export default function Container() {
   return (
-    <div className="w-[1280px] m-auto bg-[#F2F4F6]  h-[1280px] ">
-      <div className="flex w-[1280px] x bg-[#F2F4F6]  gap-[14px]">
+    <div className="w-[1280px] m-auto bg-[#F2F4F6] py-[10px] px-[10px]  ">
+      <div className="flex w-[1280px] gap-[14px]">
         <div className="w-[612px] h-[1377px]  flex flex-col justify-between">
           <img
             src={"https://cdnp.cody.mn/spree/images/1603000/large/lite2_2.png"}
@@ -22,7 +21,7 @@ export default function Container() {
             <div className="flex mb-[50px]">
               <img src="https://cdnp.cody.mn/spree/images/1603000/small/lite2_2.png" />
               <img src="https://cdnp.cody.mn/spree/images/1603001/small/lite2_3.png" />
-              <img src="https://cdnp.cody.mn/spree/images/1602999/small/lite2_1.png" />
+              <img src="https://cdnp.cody.mn/spree/images/1603001/small/lite2_3.png" />
             </div>
 
             <button className="h-[30px] w-[30px] flex-[0_0_30px] mt-[60px]  rounded-[4px] border border-solid border-[rgb(204,204,204)]">
@@ -33,10 +32,8 @@ export default function Container() {
             </button>
           </div>
 
-          <p>Үзүүлэлтүүд</p>
-
-          <div className="flex w-[500px] gap-[30px]">
-            <div className="flex flex-col">
+          <div className="flex w-[515px] h-[214px] gap-[50px] text-[13px] px-[30px] py-[20px] rounded-[4px] bg-gray-200">
+            <div className="flex flex-col ">
               <p>Насны ангилал:</p>
               <p>Оосрын материал:</p>
               <p>Хүйс:</p>
@@ -102,32 +99,33 @@ export default function Container() {
                 key={loan.id}
                 className="mb-4 p-4 border rounded-lg flex items-center  bg-gray-200 shadow-sm"
               >
-                <div>
-                  {loan.img && (
-                    <img
-                      src={loan.img}
-                      alt={loan.img || "Зээлийн зураг"}
-                      className="w-10 h-10 mb-2 object-cover"
-                    />
-                  )}
-                </div>
-
-                <div className="flex items-center gap-1 w-[572px] justify-between">
+                <div className="flex gap-3">
                   <div>
-                    {/* <h3 className="font-bold text-lg">{loan.img}</h3> */}
-                    <p className="text-[rgb(102,102,102)] text-[12px] mb-1">
-                      {loan.description}
-                    </p>
-                    <p className="text-[rgb(51,51,51)] text-[14px] font-medium">
-                      {loan.details}
-                    </p>
+                    {loan.img && (
+                      <img
+                        src={loan.img}
+                        alt={loan.img || "Зээлийн зураг"}
+                        className="w-10 h-10  object-cover"
+                      />
+                    )}
                   </div>
-                  <div>
-                    <img
-                      src="	https://smartstore.mn/c32226ff50460f00a7129070853683a9.svg"
-                      alt=""
-                      className="w-[10px] h-[16px]"
-                    />
+
+                  <div className="flex items-center w-[552px] justify-between ">
+                    <div>
+                      <p className="text-[rgb(102,102,102)] text-[12px] ">
+                        {loan.description}
+                      </p>
+                      <p className="text-[rgb(51,51,51)] text-[14px] font-medium">
+                        {loan.details}
+                      </p>
+                    </div>
+                    <div>
+                      <img
+                        src="	https://smartstore.mn/c32226ff50460f00a7129070853683a9.svg"
+                        alt=""
+                        className="w-[10px] h-[16px]"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -141,11 +139,11 @@ export default function Container() {
               </p>
               <button className="absolute left-[120px]">+</button>
             </div>
-            <button className="h-[48px] w-[180px]  rounded-[4px] border-2 border-solid border-[rgb(42,42,42)] bg-white text-[rgb(42,42,42)] text-[12px] font-bold text-center uppercase p-[3px_15px]">
+            <button className="h-[48px] w-[210px]  rounded-[4px] border-2 border-solid border-[rgb(42,42,42)] bg-white text-[rgb(42,42,42)] text-[12px] font-bold text-center uppercase p-[3px_15px]">
               Сагсанд хийх
             </button>
-            <button className="h-[48px] w-[180px]  rounded-[4px] border-2 border-solid border-[rgb(47,51,91)] bg-[rgb(47,51,91)] text-white transition-all duration-[200ms] ease-in-out text-[12px] font-bold text-center">
-              Сагсанд хийх
+            <button className="h-[48px] w-[210px]  rounded-[4px] border-2 border-solid border-[rgb(47,51,91)] bg-[rgb(47,51,91)] text-white transition-all duration-[200ms] ease-in-out text-[12px] font-bold text-center">
+              Худалдан авах
             </button>
           </div>
           <div>

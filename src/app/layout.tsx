@@ -5,7 +5,7 @@ import Header from "./_Components/Header";
 import Midbar from "./_Components/Midbar";
 import NavItems from "./_Components/NavItems";
 import News from "./_Components/News";
-
+import Footer from "./_Components/Footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -36,7 +36,9 @@ export default function RootLayout({
         <NavItems />
         <News />
         {children}
+        <Footer/>
       </body>
+
     </html>
   );
 }

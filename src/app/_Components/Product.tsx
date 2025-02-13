@@ -2,7 +2,7 @@ import { MyCard } from "./MyCard";
 
 export default function Product() {
   return (
-    <div className="w-[1280px] m-auto bg-[#F2F4F6]  h-[1280px]">
+    <div className="w-[1280px] m-auto bg-[#F2F4F6] ">
       <h1>Бүтээгдэхүүний мэдээлэл</h1>
       <div>
         <img
@@ -52,7 +52,7 @@ export default function Product() {
           alt=""
         />
       </div>
-      <div className="flex w-[1280px] justify-between">
+      <div className="flex w-[1280px] justify-between mt-5">
         <div>
           <h2 className="text-gray-800 text-xl font-medium mb-0">
             Төстэй бараанууд
@@ -74,12 +74,13 @@ export default function Product() {
           </button>
         </div>
       </div>
+      <div className="h-[800px] flex flex-col gap-[10px] myt">
       <div className="w-[1280px] m-auto justify-between flex gap-2">
         {MyCard.map((card) => {
           return (
             <div
               key={card.id}
-              className="cursor-pointer rounded-[2px] h-[382.25px] w-[232.75px] flex flex-col gap-5 border border-[rgb(228, 228, 228)] bg-white  relative"
+              className="cursor-pointer rounded-[2px] h-[322.25px] w-[232.75px] flex flex-col gap-5 border border-[rgb(228, 228, 228)] bg-white  relative"
             >
               {card.img && (
                 <img
@@ -130,13 +131,13 @@ export default function Product() {
           return (
             <div
               key={card.id}
-              className="cursor-pointer rounded-[2px] h-[382.25px] w-[232.75px] flex flex-col gap-5 border border-[rgb(228, 228, 228)] bg-white  relative"
+              className="cursor-pointer rounded-[2px] h-[322.25px] w-[232.75px] flex flex-col gap-5 border border-[rgb(228, 228, 228)] bg-white  relative"
             >
-              {card.img && (
+              {card.img && (            
                 <img
                   src={card.img}
                   alt={card.img || "Зээлийн зураг"}
-                  className="w-[230px] h-[275px]"
+                  className="w-[230px] h-[275px] w-full h-full object-contain  "
                 />
               )}
               <div className="flex flex-col gap-2">
@@ -153,6 +154,8 @@ export default function Product() {
             </div>
           );
         })}
+      </div>
+
       </div>
     </div>
   );
