@@ -3,7 +3,7 @@ import { MyCard } from "./MyCard";
 export default function Product() {
   return (
     <div className="w-[1280px] m-auto bg-[#F2F4F6] ">
-      <h1>Бүтээгдэхүүний мэдээлэл</h1>
+    
       <div>
         <img
           src="	https://d1f6qhhrbg3j8a.cloudfront.net/img/175963/original/1.png"
@@ -52,7 +52,7 @@ export default function Product() {
           alt=""
         />
       </div>
-      <div className="flex w-[1280px] justify-between mt-5">
+      <div className="flex w-[1280px] justify-between  mt-5">
         <div>
           <h2 className="text-gray-800 text-xl font-medium mb-0">
             Төстэй бараанууд
@@ -76,21 +76,21 @@ export default function Product() {
           </button>
         </div>
       </div>
-      <div className="h-[900px] flex flex-col gap-[10px] myt">
-        <div className="w-[1280px] m-auto justify-between flex gap-2">
+      <div className="h-[700px] flex flex-col ">
+        <div className="w-[1280px] flex m-auto  gap-[5px]">
           {MyCard.map((card) => {
             return (
               <div
                 key={card.id}
-                className="cursor-pointer rounded-[2px] h-[392.25px] w-[232.75px] flex flex-col gap-5 border border-[rgb(228, 228, 228)] bg-white  relative"
+                className="py-[10px] px-[10px] cursor-pointer rounded-[2px] h-[292.25px] w-[209.75px] flex flex-col gap-[3px] border border-[rgb(228, 228, 228)] bg-white  "
               >
-                {card.img && (
-                  <img
-                    src={card.img}
-                    alt={card.img || "Зээлийн зураг"}
-                    className="w-[230px] h-[275px]"
-                  />
-                )}
+              {card.img && (<div
+style={{ backgroundImage: `url(${card.img})` }}
+    className="bg-cover bg-center h-full w-full"
+  >
+    <span className="sr-only">{card.img || "Зээлийн зураг"}</span>
+  </div>
+)}   
                 <div className="flex flex-col gap-2">
                   <p className="text-[rgb(17,17,17)] text-[14px] font-semibold overflow-hidden whitespace-nowrap text-ellipsis uppercase leading-normal">
                     {card.title}
@@ -135,20 +135,13 @@ export default function Product() {
             return (
               <div
                 key={card.id}
-                className="cursor-pointer rounded-[2px] h-[392.25px] w-[232.75px] flex flex-col gap-5 border border-[rgb(228, 228, 228)] bg-white  relative"
-              >
-                {card.img && (
-                  <img
-                    src={card.img}
-                    alt={card.img || "Зээлийн зураг"}
-                    className="w-full h-full object-contain  "
-                  />
-                )}
-                <div className="flex flex-col gap-2">
+                className="py-[10px] px-[10px] cursor-pointer rounded-[2px] h-[292.25px]  w-[206.75px]  flex flex-col gap-5 border border-[rgb(228, 228, 228)] bg-white  ">
+                {card.img && (<div style={{ backgroundImage: `url(${card.img})` }}className="bg-cover bg-center h-full w-full">  <span className="sr-only">{card.img || "Зээлийн зураг"}</span> </div>)} 
+                <div className="flex flex-col ">
                   <p className="text-[rgb(17,17,17)] text-[14px] font-semibold overflow-hidden whitespace-nowrap text-ellipsis uppercase leading-normal">
                     {card.title}
                   </p>
-                  <p className="text-[rgb(102,102,102)] text-[15px] font-normal ">
+                  <p className="text-[rgb(102,102,102)] mb-[5px] text-[15px] font-normal ">
                     {card.disc}
                   </p>
                   <p className="text-[16px] font-[Arial, sans-serif] font-bold whitespace-nowrap">

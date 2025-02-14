@@ -34,4 +34,11 @@ export const MyCard = [
     disc: "Ухаалаг цаг",
     express: "149,000 ₮",
   },
+  {
+    id: 6,
+    img: "https://cdnp.cody.mn/spree/images/1885675/product/Kr_Pro_Black-4.jpg",
+    title: "Kieslect Calling Watch KR Pro Black | Ухаалаг цаг",
+    disc: "Ухаалаг цаг",
+    express: "149,000 ₮",
+  },
 ];

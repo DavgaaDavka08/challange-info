@@ -5,10 +5,9 @@ import Product from "./_Components/Product";
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <Container />
       <Product />
-   
     </div>
   );
 }
